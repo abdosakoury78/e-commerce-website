@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* navbar */
+.links a:first-child {
+    color: #ff6e4e;
+}
+
+
+/* home section */
+
+.home {
+    height: 100vh;
+}
+.home .container-fluid {
+    background-image: url("../Images/background.jpg");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-position: center;
+    text-align: center;
+}
+
+.home .container-fluid::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.587);
+}
+
+.home .container-fluid h1 {
+    color: white;
+    font-size: 60px;
+    z-index: 2;
+}
+
+.home .container-fluid p {
+    z-index: 2;
+    color: white;
+    width: 60%;
+    margin: 20px 0;
+}
+
+.home .container-fluid p:first-child {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+ .shop-btn {
+    font-size: 20px;
+    color: white;
+    background-color: #ff6e4e;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    z-index: 2;
+    border: none;
+    transition: 0.3s;
+}
+
+.shop-btn:hover {
+    background-color: #ff6e4e93;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .home .container-fluid p {
+        width: 100%;
+    }
+}
+
+
+/* Elements Part */
+.elements {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 70px 0;
+}
+
+.element {
+    margin: 0 20px;
+    border-left: #ff6e4e 1px solid;
+    padding: 10px 20px 0;
+    width: 20%;
+}
+
+.element p {
+    color: #777777;
+}
+
+@media only screen and (max-width: 768px) {
+    .element {
+        width: 80%;
+        margin: 20px ;
+    }
+}
+
+
+/* About Section */
+.carousel-inner {
+    height: 500px;
+    position: relative;
+}
+
+.carousel-inner::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.521);
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-caption h5 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.carousel-caption p {
+    font-size: 16px;
+    color: #c1bebe;
+}
+
+.carousel-caption {
+    z-index: 9;
+}
+
+
+/* Products Seciton */
+#products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#products-container .product {
+    width: 30%;
+    /* height: 500px; */
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* border: 1px solid #ff6e4e; */
+    text-align: center;
+    align-items: center;
+}
+
+#products-container .product img {
+    width: 100%;
+    height: 250px;
+}
+
+#products-container .product .btn {
+    padding: 10px 20px;
+    background-color: #ff6e4e;
+    color: white;
+    font-weight: 600;
+    /* width: 200px; */
+}
+
+@media only screen and (max-width: 768px) {
+    #products-container .product {
+        width: 100%;
+    }
+}
+
+/* Section Offer */
+.offer {
+    background-color: black;
+    color: white;
+}
+
+.offer .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0;
+    height: 80vh;
+}
+
+.container .special {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    width: 40%;
+}
+
+.container .special p {
+    color: #ff6e4e;
+    font-weight: 600;
+}
+
+.container .special h2 {
+    font-size: 45px;
+}
+
+.offer .container img {
+    width: 40%;
+    height: 300px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .offer {
+        height: 100vh;
+    }
+    .offer .container .special {
+        /* flex-direction: column; */
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .offer .container {
+        padding: 40px 0;
+    }
+
+    .offer .container img {
+        height: 220px;
+        width: 80%;
+    }
+}
+
+
+/* Section Reviews */
+#reviews {
+    padding: 80px 0 40px;
+}
+
+#reviews .container {
+    text-align: center;
+}
+
+#reviews .container h1 {
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+
+.container .customers {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    gap: 30px;
+    justify-content: flex-start;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
+.customers .review {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 30%;
+    flex-shrink: 0;
+}
+
+.container .customers::-webkit-scrollbar {
+    width: 0;
+}
+
+.review i {
+    color: #ffb800;
+}
+
+.review p {
+    font-size: 14px;
+    color: #777777;
+}
+
+.review .customer {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.review .customer .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.customer img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container .customers {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .customers .review {
+        width: 100%;
+        flex-shrink: 1;
+    }
+
+    #reviews .container h1 {
+        font-size: 35px;
+    }
+}
+
+
+/* Section Explore */
+#explore {
+    background-image: url("../Images/clothes.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    height: 80vh;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px 0;
+}
+
+#explore::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.523);
+    position: absolute;
+    top: 0;
+}
+
+#explore .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    z-index: 8;
+}
+
+#explore .container h1 {
+    font-size: 50px;
+}
+
+#explore .container p {
+    color: #c1bebe;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #explore {
+        justify-content: center;
+    }
+    #explore .container h1 {
+        font-size: 40px;
+    }
+}

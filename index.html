@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="nav">
+        <div class="navbar p-4 container-md ">
+            <div class="logo">
+                <p><span>Q</span>uick<span>B</span>uy</p>
+            </div>
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="icons">
+                <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                <i class="fa-solid fa-user" id="user"></i>
+                <div class="numOfCarts">0</div>
+                <i class="fa-solid fa-bars" id="list"></i>
+            </div>
+            <div class="shopping-cart">
+                <div class="navbar">
+                    <p>Shopping Cart</p>
+                    <i class="fa-solid fa-xmark" id="close"></i>
+                </div>
+                <div class="product">
+                    <p>No products in the cart.</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="home">
+        <div class="container-fluid">
+            <p>Welcome to QuickBuy</p>
+            <h1>Where Style Meets Simplicity</h1>
+            <p>Step into a world where fashion comes alive with vibrant colors, timeless designs, and unique styles. Whether you're dressing up for a special occasion or finding the perfect everyday look, we've got you covered. </p>
+            <button class="shop-btn">Shop Now</button>
+        </div>
+    </section>
+
+
+    <!-- Elements part -->
+    <div class="elements container">
+        <div class="element">
+            <h4>Order Online</h4>
+            <p>Share some details here. This is Flexible section where you can share anything you want.</p>
+        </div>
+        <div class="element">
+            <h4>Free Shopping</h4>
+            <p>Share some details here. This is Flexible section where you can share anything you want.</p>
+        </div>
+        <div class="element">
+            <h4>More Freshness</h4>
+            <p>Share some details here. This is Flexible section where you can share anything you want.</p>
+        </div>
+        <div class="element">
+            <h4>Safe Payment</h4>
+            <p>Share some details here. This is Flexible section where you can share anything you want.</p>
+        </div>
+    </div>
+
+
+    <!-- About Section -->
+    <section class="about">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Images/about1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h5>Our Mission</h5>
+                    <p>We aim to provide the best clothing experience with top-notch quality and trendy designs.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Images/about2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h5>Our Values</h5>
+                    <p>Commitment to sustainability, ethical fashion, and customer satisfaction.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Images/about3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h5>Our Team</h5>
+                    <p>Meet the creative minds behind our brand, dedicated to bringing you the best styles.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+
+
+    <!-- Section Products -->
+     <section id="products">
+        <div class="container-md text-center pt-5">
+            <h1 class="mb-5">Most Popular</h1>
+            <div id="products-container"></div>
+        </div>
+     </section>
+
+
+     <!-- Section Offer -->
+      <section class="offer">
+        <div class="container">
+            <img src="Images/4.webp" alt="">
+            <div class="special">
+                <p>SPECIAL OFFER</p>
+                <h2>Your  Journey Begins Here: Get 20% Off Your First Order!</h2>
+                <button class="shop-btn">Shop Now</button>
+            </div>
+        </div>
+      </section>
+
+
+      <!-- Section Reviews -->
+    <section id="reviews">
+        <div class="container">
+            <h1>Hear From Our Happy Customers</h1>
+            <p>Share some details here. This is Flexible section where you can share anything you want.</p>
+            <div class="customers">
+                <div class="review">
+                    <div class="icons-star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>I've been a loyal customer of QuickBuy for years, and they never cease to amaze me. The clothes are always great, the arrangements are stunning, and the service <br>is top-notch.</p>
+                    <div class="customer">
+                        <img src="Images/testimonial-skip-01.jpg" alt="">
+                        <div class="info">
+                            <h6>Steve Smith</h6>
+                            <p>Wedding Planner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="icons-star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>I recently used QuickBuy for my daughter's wedding, and I couldn't have been happier with the results.The clothes are always great, and the team went above and beyond to bring.</p>
+                    <div class="customer">
+                        <img src="Images/testimonial-skip-02-1.jpg" alt="">
+                        <div class="info">
+                            <h6>Mila Kunis</h6>
+                            <p>Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="icons-star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>I've been a loyal customer of QuickBuy for years, and they never cease to amaze me. The Clothes are always great, the arrangements are stunning, and the service <br>is top-notch.</p>
+                    <div class="customer">
+                        <img src="Images/testimonial-skip-01-1.jpg" alt="">
+                        <div class="info">
+                            <h6>Wade Warren</h6>
+                            <p>Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="icons-star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>I've been a loyal customer of QuickBuy for years, and they never cease to amaze me. The clothes are always great, the arrangements are stunning, and the service <br>is top-notch.</p>
+                    <div class="customer">
+                        <img src="Images/testimonial-skip-01.jpg" alt="">
+                        <div class="info">
+                            <h6>Steve Smith</h6>
+                            <p>Wedding Planner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="icons-star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>I recently used QuickBuy for my daughter's wedding, and I couldn't have been happier with the results. The clothes are always great, and the team went above and beyond to bring.</p>
+                    <div class="customer">
+                        <img src="Images/testimonial-skip-02-1.jpg" alt="">
+                        <div class="info">
+                            <h6>Mila Kunis</h6>
+                            <p>Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="icons-star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>I've been a loyal customer of QuickBuy for years, and they never cease to amaze me. The clothes are always great, the arrangements are stunning, and the service <br>is top-notch.</p>
+                    <div class="customer">
+                        <img src="Images/testimonial-skip-01-1.jpg" alt="">
+                        <div class="info">
+                            <h6>Wade Warren</h6>
+                            <p>Designer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section Explore-->
+    <section id="explore">
+        <div class="container">
+            <h1>Transform your style with QuickBuy!</h1>
+            <p>Discover our curated collections and indulge in effortless elegance. Shop now to elevate your wardrobe <br> and experience fashion at its finest.</p>
+            <button class="shop-btn">Shop Now</button>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+     <footer>
+        <div class="container row">
+            <div class="shop col-12 col-md-8 mb-5">
+                <h4>QuickBuy Shop</h4>
+                <p>Welcome to QuickBuy, your gateway to a world of effortless shopping and style. Explore our story, discover our passion for curating quality products, and experience the convenience of making every purchase count. Let us help you find exactly what you need, whenever you need it.</p>
+            </div>
+            <div class="contact col-12 col-md-3">
+                <h4>Contact Us</h4>
+                <p>Address: 13 Fifth Avenue, Cairo, Egypt</p>
+                <p>Phone: +20 111 234 5678</p>
+                <p>Email: contact@quickbuy.com</p>
+                <div class="social">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2024 Clothing Store</p>
+        </div>
+     </footer>
+
+
+     <!-- button up -->
+     <i class="fa-solid fa-arrow-up" id="btn-up"></i>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/nav.js"></script>
+    <script src="JS/script.js"></script>
+</body>
+</html>

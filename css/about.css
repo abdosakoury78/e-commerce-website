@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* navbar */
+
+.links a:nth-child(3) {
+    color: #ff6e4e;
+}
+
+
+/* AboutUs section */
+#aboutUs {
+    position: relative;
+    background-image: url(../Images/aboutUs.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+}
+
+#aboutUs::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.518);
+}
+
+#aboutUs .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100%;
+}
+
+#aboutUs .container p {
+    z-index: 9;
+    font-size: 60px;
+    font-style: italic;
+}
+
+
+/* Story Section */
+.story {
+    padding: 100px 0;
+}
+.story .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.story .container h1 {
+    width: 40%;
+}
+.story .container .journey {
+    width: 60%;
+}
+
+.journey h4 {
+    color: #ff6e4e;
+    font-weight: 600;
+}
+
+
+.journey p:first-of-type {
+    font-weight: 600;
+    /* font-size: 20px; */
+}
+
+@media only screen and (max-width: 768px) {
+    .journey {
+        width: 100%;
+        margin: 40px 0 0;
+    }
+
+    .story .container h1 {
+        width: 100%;
+    }
+
+    .journey p:last-child {
+        display: none;
+    }
+}
+
+
+
+/* data Section */
+.data {
+    background-image: url("../Images/shop.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.data::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.523);
+    position: absolute;
+    top: 0;
+}
+
+.data .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.data .container div {
+    z-index: 9;
+}
+
+.data .container div h2 {
+    color: #ff6e4e;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .data .container div {
+        width: 40%;
+        margin: 20px 0;
+    }
+}
+
+
+/* Quality Section */
+.quality {
+    padding: 100px 0;
+}
+
+.quality .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.quality .container h5 {
+    color: #ff6e4e;
+}
+
+.quality .container h2 {
+    line-height: 38px;
+}
+
+.quality .container p {
+    color: #777777;
+}
+@media only screen and (max-width: 768px) {
+    .quality .container p {
+        display: none;
+    }
+}
+/* Section Explore */
+#explore {
+    background-image: url("../Images/clothes.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    height: 80vh;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px 0;
+}
+
+#explore::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.523);
+    position: absolute;
+    top: 0;
+}
+
+#explore .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    z-index: 8;
+}
+
+#explore .container h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+#explore .container p {
+    color: #c1bebe;
+}
+
+.shop-btn {
+    font-size: 20px;
+    color: white;
+    background-color: #ff6e4e;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    z-index: 2;
+    border: none;
+    transition: 0.3s;
+}
+
+.shop-btn:hover {
+    background-color: #ff6e4e93;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #explore {
+        justify-content: center;
+    }
+    #explore .container h1 {
+        font-size: 40px;
+    }
+}
