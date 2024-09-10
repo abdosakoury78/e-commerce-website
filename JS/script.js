@@ -71,15 +71,16 @@ window.addEventListener('load', getCarts);
 
 
 window.addEventListener('scroll', function() {
-    if(this.window.innerWidth > 768) {
         if(window.scrollY > 300) {
-        cartbtn.addEventListener('click', function() {
-            shoppingCart.style.transform = "translateX(-120px)";
-        });
+            if(this.window.innerWidth > 768) {
+                cartbtn.addEventListener('click', function() {
+                    shoppingCart.style.transform = "translateX(-120px)";
+                });
 
-        closebtn.addEventListener('click', function() {
-            shoppingCart.style.transform = "translateX(550px)";
-        });
+                closebtn.addEventListener('click', function() {
+                    shoppingCart.style.transform = "translateX(550px)";
+                });
+            }
     }
     else {
         cartbtn.addEventListener('click', function() {
@@ -89,6 +90,5 @@ window.addEventListener('scroll', function() {
         closebtn.addEventListener('click', function() {
             shoppingCart.style.transform = "translateX(550px)";
         });
-    }
     }
 })

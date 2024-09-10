@@ -28,3 +28,27 @@ window.addEventListener('load', function() {
         })
     })
 })
+
+
+window.addEventListener('scroll', function() {
+    if(window.scrollY > 300) {
+        if(this.window.innerWidth > 768) {
+            cartbtn.addEventListener('click', function() {
+                shoppingCart.style.transform = "translateX(-120px)";
+            });
+
+            closebtn.addEventListener('click', function() {
+                shoppingCart.style.transform = "translateX(550px)";
+            });
+        }
+}
+else {
+    cartbtn.addEventListener('click', function() {
+        shoppingCart.style.transform = "translateX(0px)";
+    });
+
+    closebtn.addEventListener('click', function() {
+        shoppingCart.style.transform = "translateX(550px)";
+    });
+}
+})
