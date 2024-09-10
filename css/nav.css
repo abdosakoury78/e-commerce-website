@@ -96,12 +96,35 @@
     cursor: pointer;
 }
 
-.shopping-cart .product {
+.shopping-cart .empty {
     background-color: white;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.shopping-cart .product {
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.shopping-cart .product .item {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    width: 100%;
+    margin: 10px 0;
+}
+
+.plusMinus i{
+    margin: 0 10px;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {

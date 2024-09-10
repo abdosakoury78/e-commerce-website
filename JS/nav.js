@@ -43,7 +43,6 @@ window.addEventListener('scroll', function() {
         navbar.classList.remove("container-md");
         navbar.classList.remove("p-4");
         btnUp.style.display = "block";
-        if(window.innerWidth > 768) {
             cartbtn.addEventListener('click', function() {
                 shoppingCart.style.transform = "translateX(-120px)";
             });
@@ -51,7 +50,6 @@ window.addEventListener('scroll', function() {
             closebtn.addEventListener('click', function() {
                 shoppingCart.style.transform = "translateX(550px)";
             });
-        }
     }
     else {
         navbar.classList.remove("container-fluid");

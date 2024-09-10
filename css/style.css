@@ -173,7 +173,11 @@
     background-color: #ff6e4e;
     color: white;
     font-weight: 600;
-    /* width: 200px; */
+    transition: 0.3s;
+}
+
+#products-container .product .btn:hover {
+    background-color: #ff6e4e93;
 }
 
 @media only screen and (max-width: 768px) {
