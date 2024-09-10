@@ -43,6 +43,7 @@ window.addEventListener('scroll', function() {
         navbar.classList.remove("container-md");
         navbar.classList.remove("p-4");
         btnUp.style.display = "block";
+        if(this.window.innerWidth > 768) {
             cartbtn.addEventListener('click', function() {
                 shoppingCart.style.transform = "translateX(-120px)";
             });
@@ -50,6 +51,7 @@ window.addEventListener('scroll', function() {
             closebtn.addEventListener('click', function() {
                 shoppingCart.style.transform = "translateX(550px)";
             });
+        }
     }
     else {
         navbar.classList.remove("container-fluid");
@@ -66,7 +68,8 @@ window.addEventListener('scroll', function() {
     }
 })
 
-window.onload = function() {
+
+window.addEventListener('load', function() {
     if(window.scrollY > 300) {
         navbar.classList.add("container-fluid");
         navbar.classList.remove("container-md");
@@ -79,7 +82,7 @@ window.onload = function() {
         navbar.classList.add("p-4");
         btnUp.style.display = "none"
     }
-}
+})
 
 
 

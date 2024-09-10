@@ -66,5 +66,29 @@ function getCarts() {
     }
 }
 
-window.onload = getCarts;
+window.addEventListener('load', getCarts);
 
+
+
+window.addEventListener('scroll', function() {
+    if(this.window.innerWidth > 768) {
+        if(window.scrollY > 300) {
+        cartbtn.addEventListener('click', function() {
+            shoppingCart.style.transform = "translateX(-120px)";
+        });
+
+        closebtn.addEventListener('click', function() {
+            shoppingCart.style.transform = "translateX(550px)";
+        });
+    }
+    else {
+        cartbtn.addEventListener('click', function() {
+            shoppingCart.style.transform = "translateX(0px)";
+        });
+
+        closebtn.addEventListener('click', function() {
+            shoppingCart.style.transform = "translateX(550px)";
+        });
+    }
+    }
+})
