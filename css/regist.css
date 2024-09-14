@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.regist {
+    background-image: url("../Images/shop.webp");
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.regist .container form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.269); /* Light background with transparency */
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border with transparency */
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 400px;
+}
+
+.container form input {
+    outline: none;
+    border: none;
+    color: white;
+    background-color: transparent;
+    border-bottom: solid 1px white;
+    padding: 5px 0;
+}
+
+form input::placeholder {
+    color: white;
+    /* font-weight: 600; */
+}
+
+.error::placeholder {
+    color: red;
+}
+
+.container form button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff6e4e;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.container form button:hover {
+    background-color: #ff6e4e8a;
+}
+
+
+/* navbar */
+.icons {
+    display: none;
+}
+
+#nav {
+    background-color: rgba(0, 0, 0, 0.269); /* Light background with transparency */
+    /* border-radius: 8px; */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border with transparency */
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo p {
+    margin: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .icons {
+        display: block;
+    }
+
+    .links {
+        top: 90px;
+    }
+}

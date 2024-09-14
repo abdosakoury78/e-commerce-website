@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/regist.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+        <!-- Navbar -->
+        <nav id="nav">
+            <div class="navbar p-4 container-md ">
+                <div class="logo">
+                    <p><span>Q</span>uick<span>B</span>uy</p>
+                </div>
+                <div class="links">
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-bars" id="list"></i>
+                </div>
+            </div>
+        </nav>
+    <section class="regist">
+        <div class="container">
+            <form action="">
+                <h1 style="color: white; margin: 20px 0 0 0;">Register</h1>
+                <input required type="text" name="username" id="username" placeholder="Username" autocomplete="off">
+                <input required type="email" name="email" id="email" placeholder="Email" autocomplete="off">
+                <input required maxlength="10" type="password" name="password" id="password" placeholder="Password" autocomplete="new-password">
+                <input required type="password" name="checkPassword" id="checkPassword" placeholder="Confirm Password" autocomplete="new-password">
+                <button>Register</button>
+            </form>
+        </div>
+    </section>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/regist.js"></script>
+</body>
+</html>

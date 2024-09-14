@@ -84,8 +84,39 @@ window.addEventListener('load', function() {
     }
 })
 
+// Login form
+let overlayLog = document.querySelector(".overlayLogin");
+let formLog = document.querySelector(".formLogin");
+let body = document.querySelector("body");
+let closeLog = document.querySelector("#closeLog");
+let loginBtn = document.querySelector(".icons .login");
+let loginBtn2 = document.querySelector(".links .login");
+
+
+loginBtn.addEventListener('click', function() {
+    overlayLog.style.height = 100 + "vh";
+    formLog.style.display = "flex";
+    body.style.overflowY = "hidden";
+    closeLog.style.visibility = "visible";
+})
+
+loginBtn2.addEventListener('click', function() {
+    overlayLog.style.height = 100 + "vh";
+    formLog.style.display = "flex";
+    body.style.overflowY = "hidden";
+    closeLog.style.visibility = "visible";
+})
+
+closeLog.addEventListener('click', function() {
+    overlayLog.style.height = 0;
+    formLog.style.display = "none";
+    body.style.overflowY = "visible";
+    closeLog.style.visibility = "hidden";
+})
+
 
 
 btnUp.addEventListener('click', function() {
     window.scrollTo("", 0);
 })
+

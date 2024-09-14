@@ -54,6 +54,14 @@
     display: none;
 }
 
+.icons .login-btn {
+    background-color: #ff6e4e;
+    color: white;
+    padding: 5px 15px;
+    font-size: 18px;
+    margin: 0 20px 10px;
+}
+
 .icons {
     position: relative;
 }
@@ -65,7 +73,7 @@
     height: 22px;
     text-align: center;
     border-radius: 50%;
-    top: -20px;
+    top: -15px;
     left: 23px;
     font-weight: bold;
 }
@@ -149,6 +157,14 @@
         margin: 10px 0;
     }
 
+    .links .login {
+        display: block;
+    }
+
+    .icons .login {
+        display: none;
+    }
+
     .icons i:last-child {
         display: inline-block;
     }
@@ -157,4 +173,107 @@
         right: 0px;
         width: 100vw;
     }
+}
+
+/* login */
+
+.overlayLogin {
+    position: absolute;
+    top: 0;
+    background-color: #00000071;
+    /* height: 100vh; */
+    height: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.overlayLogin .container {
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.overlayLogin .container .formLogin {
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.078); /* Light background with transparency */
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border with transparency */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 400px;
+}
+
+.overlayLogin i {
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    transition: 0.3s;
+    visibility: hidden;
+}
+
+.overlayLogin i:hover {
+    color: #ff6e4e;
+    cursor: pointer;
+}
+
+.overlayLogin #username,
+.overlayLogin #password {
+    border-radius: 5px;
+    padding: 10px 30px 10px 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid rgba(220, 220, 220, 0.555);
+    color: white;
+}
+
+.overlayLogin #username::placeholder,
+.overlayLogin #password::placeholder {
+    color: white;
+}
+
+.formLogin .login-btn {
+    background-color: #ff6e4e;
+    color: white;
+    padding: 5px 15px;
+    font-size: 18px;
+    margin: 0 20px 10px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.formLogin .login-btn:hover {
+    background-color: #ff6e4e98;
+}
+
+.formLogin a {
+    color: white;
+    text-decoration: none;
+}
+
+.formLogin a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
 }

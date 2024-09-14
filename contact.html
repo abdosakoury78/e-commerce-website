@@ -25,10 +25,13 @@
                 <a href="products.html">Products</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
+                <div class="btn shop-btn login" style="display: none;">Login</div>
             </div>
             <div class="icons">
                 <i class="fa-solid fa-cart-shopping" id="cart"></i>
-                <i class="fa-solid fa-user" id="user"></i>
+                <i class="fa-solid fa-user" id="user" style="display: none;"></i>
+                <i class="fa-solid fa-arrow-right-from-bracket" id="logout" style="display: none;"></i>
+                <button class="btn login-btn login">Login</button>
                 <div class="numOfCarts">0</div>
                 <i class="fa-solid fa-bars" id="list"></i>
             </div>
@@ -130,8 +133,26 @@
             </div>
         </footer>
 
+
+    <!-- Login -->
+    <div class="overlayLogin">
+        <div class="container">
+            <form action="" class="formLogin">
+                <h1 style="color: white;">Login</h1>
+                <input required type="text" id="username" name="username" placeholder="username">
+                <div class="pass d-flex" style="flex-direction: column; gap: 10px;">
+                    <input required type="password" name="password" id="password" placeholder="password">
+                    <a href="register.html">Create an account</a>
+                </div>
+                <button class="login-btn" id="loginForm">Login</button>
+                <div class="error-message"></div>
+            </form>
+        </div>
+        <i class="fa-solid fa-xmark" id="closeLog"></i>
+    </div>
         <script src="JS/bootstrap.bundle.min.js"></script>
         <script src="JS/nav.js"></script>
+        <script src="JS/login.js"></script>
         <script src="JS/contact.js"></script>
         <script src="JS/script.js"></script>
 </body>
