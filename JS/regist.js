@@ -1,15 +1,30 @@
 let formRegist = document.querySelector(".container form");
 let password = document.getElementById("password");
 let checkPassword = document.getElementById("checkPassword");
+let errorMsg = document.querySelector(".error-message");
 
 
-let users = [];
+let users = JSON.parse(localStorage.getItem("data")) || [];
 
 formRegist.addEventListener('submit', function(e) {
     e.preventDefault();
 
     let formData = new FormData(e.target);
     let dataObj = Object.fromEntries(formData);
+
+    for(let user of users) {
+        if(user.username === dataObj.username) {
+            errorMsg.textContent = "Username is used";
+            return;
+        } else if(user.password === dataObj.password) {
+            errorMsg.textContent = "Password is used";
+            return
+        }
+        else {
+            errorMsg.textContent = "";
+            break;
+        }
+    }
     if(dataObj.password !== dataObj.checkPassword) {
         password.style.borderColor = "red";
         checkPassword.style.borderColor = "red";
@@ -29,6 +44,9 @@ formRegist.addEventListener('submit', function(e) {
         password.classList.remove("error");
         checkPassword.classList.remove("error");
     }
+    dataObj.address = "";
+    dataObj.phone = "";
+    dataObj.imgSrc = "";
     users.push(dataObj);
     localStorage.setItem("data", JSON.stringify(users));
 

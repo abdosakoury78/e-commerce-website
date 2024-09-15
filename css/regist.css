@@ -33,7 +33,7 @@
     backdrop-filter: blur(5px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 400px;
-    height: 400px;
+    height: 450px;
 }
 
 .container form input {
@@ -99,4 +99,11 @@ form input::placeholder {
     .links {
         top: 90px;
     }
+}
+
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: -40px;
 }

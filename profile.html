@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="nav">
+        <div class="navbar p-4 container-md ">
+            <div class="logo">
+                <p><span>Q</span>uick<span>B</span>uy</p>
+            </div>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <div class="btn shop-btn login" style="display: none;">Login</div>
+            </div>
+            <div class="icons">
+                <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                <i class="fa-solid fa-user" id="user" style="display: none;"></i>
+                <i class="fa-solid fa-arrow-right-from-bracket" id="logout" style="display: none;"></i>
+                <button class="btn login-btn login">Login</button>
+                <div class="numOfCarts">0</div>
+                <i class="fa-solid fa-bars" id="list"></i>
+            </div>
+            <div class="shopping-cart">
+                <div class="navbar">
+                    <p>Shopping Cart</p>
+                    <i class="fa-solid fa-xmark" id="close"></i>
+                </div>
+                <div class="empty">
+                    <p>No products in the cart.</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Profile section -->
+    <section class="profile">
+        <div class="container row">
+            <div class="profilePhoto col-md-5">
+                <img src="Images/profile-icon-design-free-vector.jpg" alt="#" id="displayImage"> <br>
+                <input type="file" id="fileInput" style="display: none;">
+                <button id="changePhoto">Change</button>
+                <h3 class="h3User">username</h3>
+                <p class="pEmail">a@gmail.com</p>
+            </div>
+            <div class="settings col-md-5">
+                <h2>Profile Settings</h2>
+                <div class="input">
+                    <label for="username">Username</label> <br>
+                    <input type="text" name="username" id="profileUsername" placeholder="username" autocomplete="off">
+                </div>
+                <div class="input">
+                    <label for="password">Password</label> <br>
+                    <input type="password" name="password" id="profilePassword" placeholder="password">
+                </div>
+                <div class="input">
+                    <label for="email">Email</label> <br>
+                    <input type="email" name="email" id="profileEmail" placeholder="email" autocomplete="off">
+                </div>
+                <div class="input">
+                    <label for="address">Address</label> <br>
+                    <input type="text" name="address" id="profileAddress" placeholder="address" autocomplete="off">
+                </div>
+                <div class="input">
+                    <label for="phone">Phone Number</label> <br>
+                    <input type="text" name="phone" id="profilePhone" placeholder="phone number" autocomplete="off">
+                </div>
+                <button id="saveBtn">Save</button>
+            </div>
+        </div>
+    </section>
+
+        <!-- Login -->
+        <div class="overlayLogin">
+            <div class="container">
+                <form action="" class="formLogin">
+                    <h1 style="color: white;">Login</h1>
+                    <input required type="text" id="username" name="username" placeholder="username">
+                    <div class="pass d-flex" style="flex-direction: column; gap: 10px;">
+                        <input required type="password" name="password" id="password" placeholder="password" autocomplete="off">
+                        <a href="register.html">Create an account</a>
+                    </div>
+                    <button class="login-btn" id="loginForm">Login</button>
+                    <div class="error-message"></div>
+                </form>
+            </div>
+            <i class="fa-solid fa-xmark" id="closeLog"></i>
+        </div>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/nav.js"></script>
+    <script src="JS/login.js"></script>
+    <script src="JS/profile.js"></script>
+</body>
+</html>

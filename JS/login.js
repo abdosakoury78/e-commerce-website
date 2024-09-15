@@ -35,6 +35,7 @@ formLogin.addEventListener('submit', function(e) {
             logout.style.display = "inline-block";
             userFound = true;
             errorMsg.textContent = "";
+            localStorage.setItem("currentUser", JSON.stringify(user));
             break;
         }
     }
@@ -89,6 +90,9 @@ logout.addEventListener('click', function() {
             loginBtn2.style.display = "none";
         }
     }
+
+    localStorage.removeItem("currentUser");
+    location.assign("index.html");
 });
 
 window.addEventListener('resize', function() {
@@ -106,3 +110,7 @@ window.addEventListener('resize', function() {
         }
     }
 });
+
+userIcon.addEventListener('click', function() {
+    location.assign("../profile.html");
+})
