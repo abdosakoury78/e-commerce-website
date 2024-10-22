@@ -95,6 +95,7 @@ let loginBtn2 = document.querySelector(".links .login");
 
 loginBtn.addEventListener('click', function() {
     overlayLog.style.height = 100 + "vh";
+    overlayLog.style.top = window.scrollY + 'px';
     formLog.style.display = "flex";
     body.style.overflowY = "hidden";
     closeLog.style.visibility = "visible";
@@ -109,6 +110,7 @@ loginBtn2.addEventListener('click', function() {
 
 closeLog.addEventListener('click', function() {
     overlayLog.style.height = 0;
+    overlayLog.style.top = 0 + 'px';
     formLog.style.display = "none";
     body.style.overflowY = "visible";
     closeLog.style.visibility = "hidden";

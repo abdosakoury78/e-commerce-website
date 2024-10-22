@@ -1,5 +1,3 @@
-let changePhotoBtn = document.getElementById("changePhoto");
-let fileInput = document.getElementById("fileInput");
 let displayImage = document.getElementById("displayImage");
 
 let profileUsername = document.getElementById("profileUsername");
@@ -8,23 +6,8 @@ let profileEmail = document.getElementById("profileEmail");
 let profileAddress = document.getElementById("profileAddress");
 let profilePhone = document.getElementById("profilePhone");
 
-changePhotoBtn.addEventListener('click', function() {
-    fileInput.click();
-});
 
-fileInput.addEventListener('change', function(event) {
-    let file = event.target.files[0];
-    let user = JSON.parse(localStorage.getItem("currentUser"));
 
-    if (file) {
-        let imageUrl = URL.createObjectURL(file);
-        displayImage.src = imageUrl;
-        user.imgSrc = imageUrl;
-
-        localStorage.setItem("currentUser", JSON.stringify(user));
-        
-    }
-});
 
 let h3User = document.querySelector(".h3User");
 let pEmail = document.querySelector(".pEmail");
@@ -39,7 +22,6 @@ function setProfile() {
         profilePhone.value = user.phone || "";
         h3User.textContent = user.username;
         pEmail.textContent = user.email;
-        displayImage.src = user.imgSrc || "Images/profile-icon-design-free-vector.jpg";
     }
 }
 
@@ -70,10 +52,14 @@ saveBtn.addEventListener('click', function() {
             }
         }
 
-
+        document.querySelector(".alert").style.top = "100px";
         localStorage.setItem("data", JSON.stringify(users));
 
-        alert("Profile updated successfully!");
 
     }
 });
+
+
+function closeAlert() {
+    document.querySelector(".alert").style.top = "0px";
+  }

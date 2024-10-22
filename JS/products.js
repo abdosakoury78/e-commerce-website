@@ -41,7 +41,7 @@ async function getProducts() {
         if (ele.id === 9) break;
         productsContainer.innerHTML +=
         `<div class="product">
-            <img src="${ele.image}" alt="${ele.title}" class = "image"/>
+            <a href = "product.html"><img src="${ele.image}" alt="${ele.title}" class = "image"/></a>
             <p>${ele.title}</p>
             <p>Price: $${ele.price}</p>
             <button class="btn">Add To Cart</button>
@@ -71,7 +71,6 @@ async function getProducts() {
         image.addEventListener('click', function() {
             let product = products[index];
             localStorage.setItem('selectedProduct', JSON.stringify(product));
-            location.assign("../product.html");
         });
     });
 

@@ -75,3 +75,42 @@
     outline: none;
     border-radius: 5px;
 }
+
+
+/* Alert container */
+.alert {
+    padding: 15px;
+    background-color: green; /* Red background */
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    width: 500px;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+  }
+
+  /* Message text */
+  .alert-message {
+    flex-grow: 1;
+  }
+
+  /* Close button */
+  .close-btn {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding-left: 20px;
+    color: white;
+  }
+
+  /* Close button hover effect */
+  .close-btn:hover {
+    color: #ccc;
+  }

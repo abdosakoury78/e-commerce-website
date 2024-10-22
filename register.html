@@ -38,11 +38,19 @@
                 <input required type="email" name="email" id="email" placeholder="Email" autocomplete="off">
                 <input required maxlength="10" type="password" name="password" id="password" placeholder="Password" autocomplete="new-password">
                 <input required type="password" name="checkPassword" id="checkPassword" placeholder="Confirm Password" autocomplete="new-password">
-                <button>Register</button>
+                <a id="registBtn"><button>Register</button></a>
                 <div class="error-message"></div>
             </form>
         </div>
     </section>
+
+
+
+            <!-- alert -->
+            <div class="alert">
+                <span class="alert-message">Successfully Saved.</span>
+                <span class="close-btn" onclick="closeAlert()">&times;</span>
+            </div>
     <script src="JS/bootstrap.bundle.min.js"></script>
     <script src="JS/regist.js"></script>
 </body>

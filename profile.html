@@ -28,8 +28,8 @@
             </div>
             <div class="icons">
                 <i class="fa-solid fa-cart-shopping" id="cart"></i>
-                <i class="fa-solid fa-user" id="user" style="display: none;"></i>
-                <i class="fa-solid fa-arrow-right-from-bracket" id="logout" style="display: none;"></i>
+                <a href="profile.html"><i class="fa-solid fa-user" id="user" style="display: none;"></i></a>
+                <a href="index.html"><i class="fa-solid fa-arrow-right-from-bracket" id="logout" style="display: none;"></i></a>
                 <button class="btn login-btn login">Login</button>
                 <div class="numOfCarts">0</div>
                 <i class="fa-solid fa-bars" id="list"></i>
@@ -52,8 +52,6 @@
         <div class="container row">
             <div class="profilePhoto col-md-5">
                 <img src="Images/profile-icon-design-free-vector.jpg" alt="#" id="displayImage"> <br>
-                <input type="file" id="fileInput" style="display: none;">
-                <button id="changePhoto">Change</button>
                 <h3 class="h3User">username</h3>
                 <p class="pEmail">a@gmail.com</p>
             </div>
@@ -65,7 +63,7 @@
                 </div>
                 <div class="input">
                     <label for="password">Password</label> <br>
-                    <input type="password" name="password" id="profilePassword" placeholder="password">
+                    <input type="text" name="password" id="profilePassword" placeholder="password">
                 </div>
                 <div class="input">
                     <label for="email">Email</label> <br>
@@ -100,6 +98,14 @@
             </div>
             <i class="fa-solid fa-xmark" id="closeLog"></i>
         </div>
+
+
+        <!-- alert -->
+        <div class="alert">
+            <span class="alert-message">Successfully Saved.</span>
+            <span class="close-btn" onclick="closeAlert()">&times;</span>
+        </div>
+
     <script src="JS/bootstrap.bundle.min.js"></script>
     <script src="JS/nav.js"></script>
     <script src="JS/login.js"></script>

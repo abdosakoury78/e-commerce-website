@@ -46,14 +46,12 @@ formRegist.addEventListener('submit', function(e) {
     }
     dataObj.address = "";
     dataObj.phone = "";
-    dataObj.imgSrc = "";
     users.push(dataObj);
     localStorage.setItem("data", JSON.stringify(users));
 
-    alert("Registration successful!");
-    formRegist.reset(); // Clears the form inputs
+    formRegist.reset();
+    document.querySelector(".alert").style.top = "100px";
 
-    location.assign("../index.html");
 })
 
 let links = document.querySelector(".links");
@@ -81,3 +79,8 @@ if (window.innerWidth < 768) {
         }
     });
 }
+
+
+function closeAlert() {
+    document.querySelector(".alert").style.top = "-70px";
+  }

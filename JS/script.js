@@ -15,17 +15,12 @@ async function getProducts() {
             <img src="${ele.image}" alt="${ele.title}" class = "image"/>
             <p>${ele.title}</p>
             <p>Price: $${ele.price}</p>
-            <button class="btn shop">Shop Now</button>
+            <a href = "products.html"><button class="btn shop">Shop Now</button></a>
         </div>`;
     }
 
-    let btnShop = document.querySelectorAll(".product .shop");
     let i = -1;
-    btnShop.forEach(function(button, index) {
-        button.addEventListener('click', function() {
-            location.assign("../products.html");
-        })
-    })
+
 }
 
 // localStorage.clear();

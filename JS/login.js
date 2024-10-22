@@ -92,7 +92,6 @@ logout.addEventListener('click', function() {
     }
 
     localStorage.removeItem("currentUser");
-    location.assign("index.html");
 });
 
 window.addEventListener('resize', function() {
@@ -110,7 +109,3 @@ window.addEventListener('resize', function() {
         }
     }
 });
-
-userIcon.addEventListener('click', function() {
-    location.assign("../profile.html");
-})
